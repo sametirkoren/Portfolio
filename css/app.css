@@ -35,7 +35,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.97;
   visibility: hidden;
 }
 
@@ -80,7 +80,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/pp1.jpg");
+  background: url("../img/pp3.jpg");
   background-repeat: no-repeat;
   border-radius: 50%;
   border: solid 3px #eece1a;
@@ -145,7 +145,7 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
 }
 
@@ -239,8 +239,8 @@ main#home h1 {
 }
 
 .about-info .bio-image {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
@@ -330,6 +330,20 @@ main#home h1 {
   flex-direction: column;
 }
 
+.boxes .icons {
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+.boxes .icons a {
+  padding: 0.4rem;
+}
+
+.boxes .icons a:hover {
+  color: #444;
+  transition: all 0.5s ease-out;
+}
+
 .boxes div {
   font-size: 2rem;
   border: 3px #fff solid;
@@ -410,7 +424,7 @@ main#home h1 {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../img/pp2.jpg");
+    background: url("../img/pp4.jpg");
     width: 150px;
     height: 150px;
   }

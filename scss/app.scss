@@ -16,7 +16,7 @@ body {
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font-family;
     line-height: 1.5;
 }
 
@@ -92,8 +92,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
@@ -178,6 +178,20 @@ main {
     margin-top: 1rem;
     flex-direction: column;
 
+    .icons {
+        margin-top: 1rem;
+        font-size: 18px;
+
+        a {
+            padding: 0.4rem;
+
+            &:hover {
+                color: $primary-color;
+                @include easeOut();
+            }
+        }
+    }
+
 
     div {
 
@@ -195,9 +209,13 @@ main {
             span {
                 color: set-text-color($secondary-color);
             }
+
+
         }
 
     }
+
+
 }
 
 .btn-dark {
